@@ -10,11 +10,24 @@ package project1;
  */
 public class ScopeApp {
 
-    /**
-     * @param args the command line arguments
-     */
+    static int x;
     public static void main(String[] args) {
-        // TODO code application logic here
+        x = 5;
+        System.out.println("main: x = " + x);
+        MyMethod();
+    }
+    
+    public static void MyMethod() {
+        int y;
+        y = 10;
+        
+        if (y == x+5) {
+            int z;
+            z = 15;
+            System.out.println("MyMethod: z = " + z);
+        }
+        System.out.println("MyMethod: x = " + x);
+        System.out.println("MyMethod: y = " + y);
     }
     
 }
