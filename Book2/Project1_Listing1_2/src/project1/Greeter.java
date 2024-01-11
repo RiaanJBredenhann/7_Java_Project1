@@ -10,10 +10,6 @@ package project1;
  */
 public class Greeter {
     
-    public Greeter() {
-    
-    }
-    
     public void SayHello() {
         System.out.println("Hello");
     }
