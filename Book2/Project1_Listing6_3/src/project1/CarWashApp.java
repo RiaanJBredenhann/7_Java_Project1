@@ -21,25 +21,25 @@ public class CarWashApp {
         
         switch (p)
         {
-        case 'E':
-        case 'e':
-            details += "\tNew Car Scent, plus ... \n";
-        case 'D':
-        case 'd':
-            details += "\tTire Treatment, plus ... \n";
-        case 'C':
-        case 'c':
-            details += "\tLeather/Vinyl Treatment, plus ... \n";
-        case 'B':
-        case 'b':
-            details += "\tWax, plus ... \n";
-        case 'A':
-        case 'a':
-            details += "\tWash, vacuum, and hand dry.\n";
-        break;
-        default:
-            details = "That's not one of the codes.";
-        break;
+            case 'E':
+            case 'e':
+                details += "\tNew Car Scent, plus ... \n";
+            case 'D':
+            case 'd':
+                details += "\tTire Treatment, plus ... \n";
+            case 'C':
+            case 'c':
+                details += "\tLeather/Vinyl Treatment, plus ... \n";
+            case 'B':
+            case 'b':
+                details += "\tWax, plus ... \n";
+            case 'A':
+            case 'a':
+                details += "\tWash, vacuum, and hand dry.\n";
+            break;
+            default:
+                details = "That's not one of the codes.";
+            break;
         }
         System.out.println("\nThat package includes:\n");
         System.out.println(details);
