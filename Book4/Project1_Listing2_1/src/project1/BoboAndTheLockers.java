@@ -12,7 +12,7 @@ public class BoboAndTheLockers {
         // close all the lockers
         for (int i = 1; i <= 1000; i++)
             lockers[i] = false;
-            for (int skip = 1; skip <= 1000; skip++)
+            for (int skip = 1; skip <= 1000; skip+=1)
             {
                 System.out.println("Bobo is changing every " + skip + " lockers.");
                 for (int locker = skip; locker < 1000; locker += skip)

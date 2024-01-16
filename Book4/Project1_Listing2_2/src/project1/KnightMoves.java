@@ -65,8 +65,8 @@ public class KnightMoves {
             Pos p = calculateNewPos(kPos, x, y);
             if (p != null)
             {
-            System.out.println(convertPosToSquare(p));
-            board[p.x][p.y] = 2;
+                System.out.println(convertPosToSquare(p));
+                board[p.x][p.y] = 2;
             }
         }
         printBoard(board);
@@ -134,13 +134,13 @@ public class KnightMoves {
     {
         // rule out legal moves
         if (p.x + x < 0)
-        return null;
+            return null;
         if (p.x + x > 7)
-        return null;
+            return null;
         if (p.y + y < 0)
-        return null;
+            return null;
         if (p.y + y > 7)
-        return null;
+            return null;
         
         // return new position
         return new Pos(p.x + x, p.y + y);
@@ -185,6 +185,7 @@ class Pos
 {
     public int x;
     public int y;
+    
     public Pos(int x, int y)
     {
         this.x = x;

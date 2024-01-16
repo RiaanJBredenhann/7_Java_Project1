@@ -32,6 +32,6 @@ public class GenQueue<E>
     public void addItems(GenQueue<? extends E> q) 
     {
         while (q.hasItems())
-        list.addLast(q.dequeue());
+            list.addLast(q.dequeue());
     }
 }
